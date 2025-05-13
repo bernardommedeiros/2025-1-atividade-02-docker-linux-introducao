@@ -12,7 +12,7 @@
 
 - realizei o comando abaixo para gerar a imagem do fedora:
     ```
-    docker run -it --name fedora-tutorial fedora:latest /bin/bash
+    docker run -it --name fedora-tads25.1 fedora:latest /bin/bash
     ```
 **Conclusão - Etapa(2.2.1.):** Foi essencial para a familiarização com a utilização do software Docker Desktop, que disponibiliza imagens Docker dando pull em seus arquivos e funcionalidades e sendo possível rodá-las na minha máquina.
 
@@ -173,22 +173,63 @@
     chmod u+x script.sh
 ```
 
-**Conclusão - Etapa (2.2.5.):** Nessa etapa rfoi possível compreender como funcionam as permissões de arquivos no Linux, com os comandos chmod u+x e ls -l, para adicionar permissão de execução e manipualação e verificar as permissões vigentes no arquivo, respectivamente, reforçando a ideia de importância da segurança e do controle de acesso no sistema. As aulas ministradas deram uma breve introdução ao chmod, que alterar as permissões de arquivos ou diretórios no Linux, auxiliaram no entendimento dos comandos.
+**Conclusão - Etapa (2.2.5.):** Nessa etapa foi possível compreender como funcionam as permissões de arquivos no Linux, com os comandos chmod u+x e ls -l, para adicionar permissão de execução e manipualação e verificar as permissões vigentes no arquivo, respectivamente, reforçando a ideia de importância da segurança e do controle de acesso no sistema. As aulas ministradas deram uma breve introdução ao chmod, que alterar as permissões de arquivos ou diretórios no Linux, auxiliaram no entendimento dos comandos.
+
+--- 
+
+### Processos em execução (2.2.6.)
+
+-  Para continuidade do exercício, é necessário instalar o pacote do fedora que suporte comando ps, através deste comando:
+```
+    dnf install procps -y
+```
+
+- O comando a seguir, é responsável pela listagem de processos em execução:
+
+```
+    ps aux
+```
+
+- O comando a seguir, cria um processo em segundo plano:
+
+```
+    sleep 60 &
+```
+
+- O comando a seguir, encontra o id <PID> do processo:
+
+```
+    ps aux | grep sleep
+```
+
+- O comando a seguir, encerra a execução do processo:
+
+```
+    kill <PID>
+```
+
+**Conclusão - Etapa (2.2.6.):** Foi demonstrado como gerenciar processos em execução no Linux, iniciando pela instalação do pacote procps (via dnf no fedora) para habilitar o comando ps, depois, foi criado um processo em segundo plano com sleep 60 &, e utilizado ps aux | grep sleep para localizar seu <PID>. Por fim, o processo foi encerrado com o comando kill <PID>. Essa sequência ensinou os fundamentos de controle de processos ativos no sistema, essenciais para a administração e manutenção do ambiente Linux.
+
+--- 
+
+### Processos em execução (2.2.7.)
+
+- O comando a seguir, é responsável em sair do contâiner:
+
+```
+    exit
+```
 
 
+- O comando a seguir, é responsável pela remoção do contâiner:
 
+```
+    docker rm fedora-tads25.1
+```
 
+**Conclusão - Etapa (2.2.7.):** Nessa etapa foi possível compreender como funcionam sair do contâiner Docker e removê-lo do projeto.
 
+<br>
+<br>
 
-
-
-
-
-
-
-
-
-
-
-
-<p> OBS: todos os comandos foram realizados com o terminal bash. </p>
+<p>OBS: todos os comandos foram realizados com o terminal bash. </p>
