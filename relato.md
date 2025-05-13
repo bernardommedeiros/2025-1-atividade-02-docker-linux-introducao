@@ -1,4 +1,4 @@
-# Relátorio - Atividade 02 - utilizando linux no windows
+# Relato - Atividade 02 - utilizando linux no windows
 
 ## Discente: Bernardo de Moura Medeiros
 ## 13/05/2025
@@ -153,6 +153,27 @@
 
 --- 
 
+### Permissões de arquivos (2.2.5.)
+
+- O comando a seguir já presente no relato, sendo responsável pela criação de um arquivo:
+
+```
+    touch script.sh
+```
+
+- O comando a seguir, é responsável em dar permissão(u) de execução ao dono(x):
+
+```
+    chmod u+x script.sh
+```
+
+- O comando a seguir, lista as permissões vigentes no arquivo:
+
+```
+    chmod u+x script.sh
+```
+
+**Conclusão - Etapa (2.2.5.):** Nessa etapa rfoi possível compreender como funcionam as permissões de arquivos no Linux, com os comandos chmod u+x e ls -l, para adicionar permissão de execução e manipualação e verificar as permissões vigentes no arquivo, respectivamente, reforçando a ideia de importância da segurança e do controle de acesso no sistema. As aulas ministradas deram uma breve introdução ao chmod, que alterar as permissões de arquivos ou diretórios no Linux, auxiliaram no entendimento dos comandos.
 
 
 
