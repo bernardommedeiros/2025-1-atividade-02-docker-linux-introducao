@@ -6,7 +6,7 @@
 <p> O exercício tem como objetivo principal proporcionar uma experiência prática e guiada com o uso básico do sistema operacional Linux em um ambiente isolado por meio de contêineres Docker. Consolidando o entendimento de comandos essenciais do terminal, no uso do SO Linux. E incentivando uma documentação bem estruturada, afim de aprimorar o gerenciamento e a organização do ambiente. </p>
 
 <br>
----
+<br>
 
 ### Inicializando um contêiner Fedora (2.2.1.)
 
@@ -14,7 +14,7 @@
     ```
     docker run -it --name fedora-tutorial fedora:latest /bin/bash
     ```
-**Conclusão:** Foi essencial para a familiarização com a utilização do software Docker Desktop, que disponibiliza imagens Docker dando pull em seus arquivos e funcionalidades e sendo possível rodá-las na minha máquina.
+**Conclusão - Etapa(2.2.1.):** Foi essencial para a familiarização com a utilização do software Docker Desktop, que disponibiliza imagens Docker dando pull em seus arquivos e funcionalidades e sendo possível rodá-las na minha máquina.
 
 --- 
 
@@ -67,7 +67,7 @@
     clear
     ``` 
 
-**Conclusão:** Foi possível familiarizar-se com comandos de navegação e manipulação no cmd, via Docker. Tendo algumas adaptações a depender do editor selecionado, que no meu caso foi o Fedora. Comandos como cd, pwd, ls, mkdir e cd .. permitiram a movimentação e organização de diretórios. Todos dos comandos foram abordados em sala de aula, sendo possível realizar e compreende-los com clareza, auxiliando no domínio dos conceitos iniciais de navegação no ambiente Linux.
+**Conclusão - (Etapa: 2.2.2.):** Foi possível familiarizar-se com comandos de navegação e manipulação no cmd, via Docker. Tendo algumas adaptações a depender do editor selecionado, que no meu caso foi o Fedora. Comandos como cd, pwd, ls, mkdir e cd .. permitiram a movimentação e organização de diretórios. Todos dos comandos foram abordados em sala de aula, sendo possível realizar e compreende-los com clareza, auxiliando no domínio dos conceitos iniciais de navegação no ambiente Linux.
 
 
 
@@ -119,9 +119,39 @@
     Verifique se o arquivo ainda existe em `backup`
     ```
 
-**Conclusão:** As operações realizadas expõem o gerenciamento de arquivos e diretórios no terminal. Foram utilizados comandos essenciais como touch, mv, mkdir, cp, cd, pwd e rm, permitindo a criação, renomeação, cópia, navegação e exclusão de arquivos e pastas. Ao final, foi possível confirmar que o arquivo foi devidamente copiado para o diretório backup, evidenciando o sucesso das ações propostas. A parcela majoritária dos comandos de gerenciamento de pastas e diretórios foram abordados em sala de aula, sendo possível realizar e compreende-los com clareza, auxiliando no domínio da manipulação de arquivos e diretórios no ambiente Linux.
+**Conclusão - Etapa (2.2.3.):** As operações realizadas expõem o gerenciamento de arquivos e diretórios no terminal. Foram utilizados comandos essenciais como touch, mv, mkdir, cp, cd, pwd e rm, permitindo a criação, renomeação, cópia, navegação e exclusão de arquivos e pastas. Ao final, foi possível confirmar que o arquivo foi devidamente copiado para o diretório backup, evidenciando o sucesso das ações propostas. A parcela majoritária dos comandos de gerenciamento de pastas e diretórios foram abordados em sala de aula, sendo possível realizar e compreende-los com clareza, auxiliando no domínio da manipulação de arquivos e diretórios no ambiente Linux.
 
 ---
+
+### Gerenciamento de pacotes (2.2.4.)
+
+- O comando abaixo, atualiza os pacotes para a versão mais recente do editor (fedora), removendo, atualizando e adicionando arquivos, além de listá-los e expor informações em especifíco sobre cada um, como versão em que ele se encontra, tamanho, tempo de execução dentre outros:
+
+```
+    dnf update -y
+```
+
+- Instalação do editor nano dentro do fedora, com o comando a seguir:
+
+```
+    dnf install nano -y
+```
+
+- Verificar a versão do nano, com o comando a seguir:
+
+```
+    nano --version
+```
+
+- Remoção do editor nano, com o comando a seguir:
+
+```
+    dnf remove nano -y
+```
+
+**Conclusão - Etapa (2.2.4.):** As operações realizadas são uma breve introdução à manipulação de pacotes. Foram utilizados comandos essenciais no fedora, como update, install, --version e remove, permitindo a visualização de pacotes presentes e atualização dos mesmos, instalação de pacotes específicos, visualização de versão de pacotes específicos e remoção. Ao final, foi possível manipular os pacotes de forma efetiva. As aulas ministradas auxiliaram na instalação de pacotes no editor fedora, via Docker.
+
+--- 
 
 
 
